@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết - Fatm4n Blog</title>
+    <style>
+        /* Tổng thể */
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000; /* Nền đen */
+            color: #0f0; /* Màu xanh hacker */
+        }
+
+        /* Header - Menu */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: #111;
+            padding: 15px 0;
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #0f0;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Container cho bài viết */
+        .blog-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #111;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.2);
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .blog-post h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #0f0;
+        }
+
+        .blog-post .date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .blog-post p {
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px 0;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #0f0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #0f0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <ul class="nav">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="blog.html">Bài viết</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </header>
+
+    <!-- Container Blog -->
+    <div class="blog-container">
+        <!-- Bài viết 1 -->
+        <div class="blog-post">
+            <h2>Tiêu đề bài viết 1</h2>
+            <div class="date">Ngày đăng: 07/11/2024</div>
+            <p>
+                Đây là nội dung của bài viết đầu tiên. Bạn có thể sử dụng phần này để chia sẻ
+                kinh nghiệm, ý tưởng hoặc các câu chuyện thú vị. Giao diện này được thiết kế
+                đơn giản, dễ đọc và tập trung vào nội dung.
+            </p>
+        </div>
+
+        <!-- Bài viết 2 -->
+        <div class="blog-post">
+            <h2>Tiêu đề bài viết 2</h2>
+            <div class="date">Ngày đăng: 06/11/2024</div>
+            <p>
+                Đây là nội dung của bài viết thứ hai. Giao diện này hỗ trợ hiển thị nhiều bài
+                viết với bố cục rõ ràng, phù hợp cho các trang blog hoặc nội dung thông tin.
+            </p>
+        </div>
+    </div>
+
+<style>
+    /* CSS hiện tại giữ nguyên, thêm phần dưới cùng */
+    @media (max-width: 768px) {
+        .blog-container {
+            width: 95%; /* Tăng chiều rộng container cho mobile */
+            padding: 15px; /* Giảm padding */
+        }
+
+        .blog-post h2 {
+            font-size: 1.5rem; /* Giảm kích thước tiêu đề bài viết */
+        }
+
+        .blog-post p {
+            font-size: 0.9rem; /* Giảm kích thước nội dung */
+            line-height: 1.4; /* Điều chỉnh khoảng cách dòng */
+        }
+
+        .nav {
+            gap: 20px; /* Giảm khoảng cách giữa các menu */
+        }
+
+        .nav a {
+            font-size: 1rem; /* Giảm kích thước chữ */
+        }
+    }
+</style>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Fatm4n Blog | <a href="#contact">Liên hệ</a>
+    </footer>
+</body>
+</html>

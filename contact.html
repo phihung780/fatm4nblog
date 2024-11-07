@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Fatm4n</title>
+    <style>
+        /* Tổng thể */
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000; /* Nền đen */
+            color: #0f0; /* Màu xanh hacker */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header - Menu */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: #111;
+            padding: 15px 0;
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #0f0;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Nội dung chính */
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #0f0;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #f0f0f0;
+        }
+
+        .info a {
+            color: #0f0;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <ul class="nav">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="blog.html">Bài viết</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </header>
+
+    <!-- Nội dung chính -->
+    <div class="content">
+        <h1>Liên hệ</h1>
+        <div class="info">
+            <p>Tên: Phi Hùng</p>
+            <p>Email: <a href="mailto:ngdinhphihung@gmail.com">ngdinhphihung@gmail.com</a></p>
+            <p>Facebook: <a href="https://fb.com/phihung780" target="_blank">fb.com/phihung780</a></p>
+        </div>
+    </div>
+<style>
+    /* CSS hiện tại giữ nguyên, thêm phần dưới cùng */
+    @media (max-width: 768px) {
+        .content h1 {
+            font-size: 2.5rem; /* Giảm kích thước tiêu đề */
+            margin-bottom: 15px;
+        }
+
+        .info {
+            font-size: 1rem; /* Giảm kích thước chữ */
+            line-height: 1.6; /* Điều chỉnh khoảng cách dòng */
+        }
+
+        .nav {
+            gap: 20px; /* Giảm khoảng cách giữa các menu */
+        }
+
+        .nav a {
+            font-size: 1rem; /* Giảm kích thước chữ */
+        }
+    }
+</style>
+
+</body>
+</html>
